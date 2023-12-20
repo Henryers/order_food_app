@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="#0099ff"
+        android:text="@string/p4"
+        android:textColor="#ffffff"
+        android:textSize="25sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="#eeeeee"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--账号栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/usericon"
+                    android:padding="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerCrop"
+                    android:text="图标"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/show_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="30dp"
+                    android:text="账号：1"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!--会员栏-->
+            <TextView
+                android:id="@+id/p4_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_corner"
+                android:text="开通会员"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+            <!--订单栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_corner"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p4_2_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="我的订单"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/p4_2_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:text="待付款"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/p4_2_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:text="评价"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/p4_2_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:text="退款"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!--设置栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/round_corner">
+
+                <TextView
+                    android:id="@+id/p4_3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="支付设置"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p4_3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="地址修改"
+                    android:background="@drawable/box_underline"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p4_3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="相关帮助"
+                    android:background="@drawable/box1_underline"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p4_3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="其他设置"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!--推荐栏-->
+            <TextView
+                android:id="@+id/p4_4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_corner"
+                android:text="相关推荐"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+            <!--退出登录栏-->
+            <TextView
+                android:id="@+id/p4_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:background="@drawable/round1_corner"
+                android:text="退出登录"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+            <!--注销账号栏-->
+            <TextView
+                android:id="@+id/p4_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:background="@drawable/round1_corner"
+                android:text="注销账号"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/below_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="首页"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/below_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="点菜"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/below_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="购物车"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/below_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="#0099ff"
+            android:text="我的"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

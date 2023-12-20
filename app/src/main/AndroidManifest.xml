@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalWork"
+        tools:targetApi="31">
+        <activity
+            android:name=".comment"
+            android:exported="false" />
+        <activity
+            android:name=".page4_help"
+            android:exported="false" />
+        <activity
+            android:name=".page3_Cart"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".page2_bigstall"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".page2_japanfood"
+            android:exported="false" />
+        <activity
+            android:name=".page2_juicetea"
+            android:exported="false" />
+        <activity
+            android:name=".page4_logout"
+            android:exported="false" />
+        <activity
+            android:name=".page2_northwest"
+            android:exported="false" />
+        <activity
+            android:name=".page2_pizza"
+            android:exported="false" />
+        <activity
+            android:name=".page2_midfood"
+            android:exported="false" />
+        <activity
+            android:name=".page2_Italian"
+            android:exported="false" />
+        <activity
+            android:name=".page2_noodles"
+            android:exported="false" />
+        <activity
+            android:name=".page2_chicken"
+            android:exported="false" />
+        <activity
+            android:name=".page4"
+            android:exported="false" />
+        <activity
+            android:name=".page3"
+            android:exported="false" />
+        <activity
+            android:name=".page2"
+            android:exported="false" />
+        <activity
+            android:name=".sign"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".leadin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

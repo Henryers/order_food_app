@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0099ff"
+        android:padding="20dp"
+        android:text="@string/p1"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <!--layout_height设置不了@string/Scroll_height,可能只能设置字符串，不能通过string来指定单位-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="精选视频"
+                android:textColor="@color/blue"
+                android:textSize="26sp" />
+
+            <!--视频区-->
+            <HorizontalScrollView
+                android:id="@+id/scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <VideoView
+                            android:id="@+id/video1"
+                            android:layout_width="400dp"
+                            android:layout_height="230dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="18dp" />
+
+                        <MediaController
+                            android:id="@+id/media_controller1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <VideoView
+                            android:id="@+id/video2"
+                            android:layout_width="400dp"
+                            android:layout_height="230dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp" />
+
+                        <MediaController
+                            android:id="@+id/media_controller2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <VideoView
+                            android:id="@+id/video3"
+                            android:layout_width="400dp"
+                            android:layout_height="230dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="12dp" />
+
+                        <MediaController
+                            android:id="@+id/media_controller3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--图片区-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="美食推荐"
+                android:textColor="@color/blue"
+                android:textSize="26sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="8">
+
+                <ImageView
+                    android:id="@+id/p1_png1_1"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_top_corner"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/p1_png1_2"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_top_corner"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/p1_tx1_1"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/round_under_corner"
+                    android:paddingTop="20dp"
+                    android:text="东北面馆"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p1_tx1_2"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/round_under_corner"
+                    android:paddingTop="20dp"
+                    android:text="福家大排档"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/p1_png2_1"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/p1_png2_2"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/p1_tx2_1"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/round_under_corner"
+                    android:paddingTop="20dp"
+                    android:text="杨氏炸鸡"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p1_tx2_2"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/round_under_corner"
+                    android:paddingTop="20dp"
+                    android:text="凌家中餐"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/p1_png3_1"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/p1_png3_2"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/p1_tx3_1"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/round_under_corner"
+                    android:paddingTop="20dp"
+                    android:text="F33意式餐厅"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p1_tx3_2"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/round_under_corner"
+                    android:paddingTop="20dp"
+                    android:text="故式果茶"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/p1_png4_1"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/p1_png4_2"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/p1_tx4_1"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/round_under_corner"
+                    android:paddingTop="20dp"
+                    android:text="披萨小屋"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p1_tx4_2"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/round_under_corner"
+                    android:paddingTop="20dp"
+                    android:text="何牌西北菜"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="----------  我 是 有 底 线 的 ！ ----------"
+                android:textAlignment="center"
+                android:textColor="#666666" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/below_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0099ff"
+            android:padding="15dp"
+            android:text="首页"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/below_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="点菜"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/below_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="购物车"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/below_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="我的"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/exit_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="290dp"
+            android:layout_y="10dp"
+            android:text="退出程序"
+            android:textSize="20sp"/>
+    </AbsoluteLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="120dp"
+        android:text="登   录"
+        android:textColor="@color/blue"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="账 号 :"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_margin="30dp"
+            android:inputType="text"
+            android:hint="请输入您的账号"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="密 码 :"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:hint="请输入您的密码"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="5dp"
+        android:text="登    录"
+        android:background="@drawable/round1_corner"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"/>
+
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/login_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="190dp"
+            android:layout_y="20dp"
+            android:text="没有账户? 请先注册"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#0099ff"/>
+    </AbsoluteLayout>
+
+</LinearLayout>

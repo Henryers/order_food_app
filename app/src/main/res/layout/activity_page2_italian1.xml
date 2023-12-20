@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="100dp"
+        android:layout_height="94dp"
+        android:layout_margin="3dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/appicon"/>
+
+    <TextView
+        android:id="@+id/tv_foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="foodname"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_foodprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_foodname"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_img"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="14"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/addToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_toRightOf="@+id/tv_foodname"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/bluebg"
+        android:text="加入购物车"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:gravity="center|right"/>
+
+</RelativeLayout>

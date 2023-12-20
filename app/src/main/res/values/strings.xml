@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FinalWork</string>
+    <string name="p1">首页</string>
+    <string name="p2">点餐</string>
+    <string name="p3">购物车</string>
+    <string name="p4">我的</string>
+</resources>

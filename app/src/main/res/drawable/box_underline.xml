@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item> <!-- 格子间的连接处颜色 -->
+        <shape>
+            <solid android:color="#dddddd" />
+        </shape>
+    </item>
+    <item android:bottom="1dp"
+        android:top="1dp"> <!--设置底部有边框-->
+        <shape>
+            <solid android:color="#ffffff" />  <!-- 主体背景颜色 -->
+        </shape>
+    </item>
+</layer-list>

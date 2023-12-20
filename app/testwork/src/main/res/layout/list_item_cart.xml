@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!--列表视图的每一行的构成元素-->
+    <TextView
+        android:id="@+id/product_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/product_price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/decrease_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/appicon"
+        android:scaleType="centerCrop"
+        android:contentDescription="Decrease" />
+
+    <TextView
+        android:id="@+id/product_quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/increase_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/appicon"
+        android:scaleType="centerCrop"
+        android:contentDescription="Increase" />
+
+</LinearLayout>

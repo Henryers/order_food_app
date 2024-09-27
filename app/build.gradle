@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.finalwork'
-    compileSdk 33
+    compileSdk 33   // 系统向后兼容，34手机系统允许允许33的程序，反过来不行
 
     defaultConfig {
         applicationId "com.example.finalwork"

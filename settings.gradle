@@ -14,5 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FinalWork"
 include ':app'
-include ':app:testwork'
-include ':app:testwork2'

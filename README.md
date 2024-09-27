@@ -1,9 +1,7 @@
 ## 项目目录
-`FinalWork\app\src\main`
-FinalWork是我的整个工程，大家**直接在android studio里面打开这个项目就行（不用新建项目，打开我这个文件就可以）**
-**里面main路径下的java和xml代码才是我最终的程序代码**
-`src\androidTest`和`src\test`两个目录下的文件，均是我测试用的java和xml代码
-与`src`平级的`testwork`、`testwork2`是我测试用的两个app，大家可以不用管
+这是我的整个工程，大家**直接在android studio里面打开这个项目就行（不用新建项目，打开我这个文件就可以）**
+**`app\src\main` 路径下的java和xml代码是我最终的程序源代码**
+`app\src\androidTest` 和 `app\src\test` 两个目录下的文件，均是系统自动生成的，测试用的代码程序，大家不用重点关注
 
 ## 项目bug修改
 ### 1. 工程优化说明
